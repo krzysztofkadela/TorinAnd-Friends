@@ -36,14 +36,14 @@
     },
 
     {
-        "name":"",
+        "name":"Ori",
         "descrition":"Ori was a member of Thorin's Company of Dwarves and participated in the Quest of Erebor, as well as fighting in and surviving the Battle of Five Armies. He, along with his cousins Dori and Nori,[2] were remote kinsmen of Thorin II Oakenshield.",
-        "image":""
+        "image":"https://static.wikia.nocookie.net/lotr/images/8/81/Ori.jpeg"
     },
 
     {
-        "name":"",
-        "descrition":"",
-        "image":""
+        "name":"Dori",
+        "descrition":"Dori was a Dwarf of Durin's Folk, who, along with his brother Nori and cousin Ori,[1] travelled with Bilbo Baggins and Thorin II as a member of Thorin's Company on the Quest for Erebor, to reclaim the Lonely Mountain from the dragon Smaug.",
+        "image":"https://static.wikia.nocookie.net/lotr/images/8/89/Dori-markhadlow-p.jpg"
     }
 ]
