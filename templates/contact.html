@@ -1,4 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Contact Us</h1>
+<h1>{{page_title}}</h1>
+
+<div class="container mt-5">
+    <h2>Submit Your Comment</h2>
+    <form id="commentForm">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+            <label for="comment" class="form-label">Comment</label>
+            <textarea class="form-control" id="comment" rows="3" placeholder="Write your comment here..."
+                required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Comment</button>
+    </form>
+</div>
+
 {% endblock %}
