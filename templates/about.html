@@ -14,22 +14,44 @@
     to leave on other business, welcomed a fourteenth to fill into their party.
 </p>
 
+
 {% for member in company %}
     <div class="row features marginTop">
-        <div class="col-md-7">
-            <h3>{{ member.name }}</h3>
 
-            <p>
-                 {{ member.descrition }}
-            </p>
-        </div>
+        {% if loop.index % 2 !=0 %}
+            <div class="col-md-7">
+                <h3>{{ loop.index }}. {{ member.name }}</h3>
 
-        <div class="col-md-5">
-            <img src="{{ member.image}}" class="img-fluid float-end" alt="Thorin II Oakenshield" />
-        </div>
+                <p>
+                    {{ member.descrition }}
+                </p>
+            </div>
+
+            <div class="col-md-5">
+                <img src="{{ member.image}}" class="img-fluid float-end" alt="Thorin II Oakenshield" />
+            </div>
+         
+         {% else %}   
+
+            <div class="col-md-5">
+                <img src="{{ member.image}}" class="img-fluid float-end" alt="Thorin II Oakenshield" />
+            </div>
+
+            <div class="col-md-7">
+                <h3>{{ loop.index }}. {{ member.name }}</h3>
+
+                <p>
+                    {{ member.descrition }}
+                </p>
+            </div>
+
+        {% endif %}
+
     </div>
-
-    <hr class="featurette-divider">
+    
+    {% if loop.index != loop.length %}
+        <hr class = "featurette-divider">
+    {% endif %}
 
 {% endfor %}
 
